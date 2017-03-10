@@ -1,11 +1,15 @@
 function addBtn() {
     'use strict';
     //declare variebles
-    var createdLi, text, text1;
-    createdLi = document.createElement('li');
-    text = document.getElementById('textBox').value;
-    text1 = document.createTextNode(text);
-    createdLi.appendChild(text1);
-    document.getElementById('plateNum').appendChild(createdLi);
+    var ul = document.getElementById("plateNum");
+    //var createdLi, text, text1;
+    var text = document.getElementById('textBox').value;
+    if (text.length > 0 && text !== null){
+        
+    var createdLi = document.createElement('li');
+    createdLi.textContent = text;
+   // text1 = document.createTextNode(text);
+    ul.appendChild(createdLi);
+    }  //document.getElementById('plateNum').appendChild(createdLi);
     document.getElementById('textBox').value = '';
 }
