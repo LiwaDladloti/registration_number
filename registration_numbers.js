@@ -16,7 +16,6 @@ function regNo() {
     var regArea = document.getElementById('optionList').value;
     var allAreas = document.getElementById('allAreas').innerHTML;
     var bel = document.getElementById('Bellville').innerHTML;
-    console.log(regArea + "," + bel);
     var cpt = document.getElementById('capeTown').innerHTML;
     var paarl = document.getElementById('Paarl').innerHTML;
     var list = document.getElementsByTagName('li');
@@ -28,7 +27,6 @@ function regNo() {
         if (regArea === allAreas) {
             listLoop.style.display = 'inline-block';
         } else if (regArea === bel && currentReg.startsWith('CY')) {
-            console.log("entered CY block")
             listLoop.style.display = 'inline-block';
         } else if (regArea === cpt && currentReg.startsWith('CA')) {
             listLoop.style.display = 'inline-block';
