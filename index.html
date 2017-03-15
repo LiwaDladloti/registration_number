@@ -10,10 +10,23 @@
     
     <div id = "page">
     
-        <input type="text" id = "textBox" placeholder="Type Registration Numbers here">
+        <input type="text" id = "textBox" placeholder="Type Registration">
         <hr/>
         <button type="button" id="addBtn" onclick = "addBtn()">Add</button>
+        <hr/>
         
+        <div id = 'dropDown'>
+        
+        <input id = 'optionList' list="list" placeholder="Select your town">
+            <hr/>
+        <button id = 'filterBtn' type = 'button' onclick = 'regNo()'>Filter</button>
+            <datalist id = "list">
+            <option id ="allAreas" name = "areas">All Areas</option>
+            <option id ="Bellville" name = "areas">Bellville</option>
+            <option id ="capeTown" name = "areas">Cape Town</option>
+            <option id ="Paarl" name = "areas">Paarl</option>
+            </datalist>
+        </div>
     </div>
     
     <div id = "printPlates">
