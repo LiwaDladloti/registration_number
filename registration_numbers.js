@@ -26,11 +26,11 @@ function regNo() {
         console.log(listLoop);
         if (regArea === allAreas) {
             listLoop.style.display = 'inline-block';
-        } else if (regArea === bel && currentReg.startsWith('CY')) {
+        } else if (regArea === bel && currentReg.startsWith('CY ')) {
             listLoop.style.display = 'inline-block';
-        } else if (regArea === cpt && currentReg.startsWith('CA')) {
+        } else if (regArea === cpt && currentReg.startsWith('CA ')) {
             listLoop.style.display = 'inline-block';
-        } else if (regArea === paarl && currentReg.startsWith('CL')) {
+        } else if (regArea === paarl && currentReg.startsWith('CL ')) {
             listLoop.style.display = 'inline-block';
         } else {
             listLoop.style.display = 'none'
